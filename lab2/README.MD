@@ -22,14 +22,14 @@
 
 | File Name | Description |
 |-----------|-------------|
-| and_gate.vhd | AND gate design |
-| or_gate.vhd | OR gate design |
-| not_gate.vhd | NOT gate design |
-| nand_gate.vhd | NAND gate design |
-| nor_gate.vhd | NOR gate design |
-| xor_gate.vhd | XOR gate design |
-| xnor_gate.vhd | XNOR gate design |
-| gates_tb.vhd | Testbench for all logic gates |
+| ANDDesign.vhd | AND gate design |
+| ORDesign.vhd | OR gate design |
+| NOTDesign.vhd | NOT gate design |
+| NANDDesign.vhd | NAND gate design |
+| NORDesign.vhd | NOR gate design |
+| XORDesign.vhd | XOR gate design |
+| XNORDesign.vhd | XNOR gate design |
+| testbench.vhd | Testbench for all logic gates |
 | simulation.vcd | Simulation waveform |
 | output.png | GTKWave waveform screenshot |
 | README.md | Lab report |
@@ -51,7 +51,7 @@
 ## GHDL Commands
 
 ```bash
-ghdl -a and_gate.vhd or_gate.vhd not_gate.vhd nand_gate.vhd nor_gate.vhd xor_gate.vhd xnor_gate.vhd gates_tb.vhd
+ghdl -a ANDDesign.vhd ORDesign.vhd NOTDesign.vhd NANDDesign.vhd NORDesign.vhd XORDesign.vhd XNORDesign.vhd testbench.vhd
 
 ghdl -e GATES_TB
 

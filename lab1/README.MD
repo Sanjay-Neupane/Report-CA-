@@ -65,13 +65,13 @@ The VHDL design was successfully compiled and simulated using GHDL. The waveform
 | 10–20     | 1       | 1        |
 | 20–30     | 0       | 0        |
 
-> **Insert the GTKWave waveform screenshot below.**
+# OUTPUT
 
-```md
+
 ![GTKWave Output](output.png)
-```
 
----
+
+
 
 # Discussion and Conclusion
 

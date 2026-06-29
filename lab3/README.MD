@@ -88,11 +88,11 @@ gtkwave decoder.vcd
 
 ## Decoder Waveform
 
-![GTKWave Output](decoder\output.png)
+![GTKWave Output](Decoder\output.png)
 
-## Decoder Waveform
+## Encoder Waveform
 
-![GTKWave Output](encoder\Output.png)
+![GTKWave Output](Encoder\Output.png)
 
 ---
 

@@ -1,0 +1,7 @@
+v 4
+file . "encoder_tb.vhd" "09760d3c81506e0a17fbcac35e4dccc610a728c4" "20260629090947.225":
+  entity encoder_tb at 1( 0) + 0 on 13;
+  architecture simulation of encoder_tb at 5( 94) + 0 on 14;
+file . "encoder_4to2.vhd" "0715e5b6ab331b7bf0fbf4d3bf88c9cb92e923ed" "20260629090927.323":
+  entity encoder_4to2 at 1( 0) + 0 on 11;
+  architecture behavioral of encoder_4to2 at 12( 238) + 0 on 12;

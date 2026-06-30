@@ -92,7 +92,7 @@ gtkwave decoder.vcd
 
 ## Encoder Waveform
 
-![GTKWave Output](Encoder\Output.png)
+![GTKWave Output](Encoder\Output1.png)
 
 ---
 

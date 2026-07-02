@@ -29,7 +29,7 @@ In this lab, the comparator is designed using **VHDL**. The `NUMERIC_STD` librar
 
 ```
 Lab5/
-│── comparator_2bit.vhd      # Design file
+│── 2bitComparator.vhd     # Design file
 │── comparator_tb.vhd        # Testbench
 │── comparator.vcd           # Simulation waveform
 │── output.png               # Output screenshot

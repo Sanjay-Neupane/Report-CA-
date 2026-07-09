@@ -94,13 +94,13 @@ gtkwave gray.vcd
 
 ### 1. BCD-to-Excess-3 Waveform
 
-![BCD TO EXCESS-3 Output](BCDtoExcess3\output.png)
+![BCD TO EXCESS-3 Output](BCDtoExcess3/output.png)
 
 ---
 
 ### 2. Binary-to-Gray Waveform
 
-![BINARY TO GRAY Output](Bina_to_Gray\output.png)
+![BINARY TO GRAY Output](Bina_to_Gray/output.png)
 
 ---
 

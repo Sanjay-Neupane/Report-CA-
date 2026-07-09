@@ -93,11 +93,11 @@ gtkwave demux.vcd
 
 ### Multiplexer GTKWave Output
 
-![Multiplexer GTKWave Output](MUX\Output.png)
+![Multiplexer GTKWave Output](MUX/Output.png)
 
 ### Demultiplexer GTKWave Output
 
-![Demultiplexer GTKWave Output](DEMUX\output1.png)
+![Demultiplexer GTKWave Output](DEMUX/output1.png)
 
 ---
 

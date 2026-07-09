@@ -1,0 +1,7 @@
+v 4
+file . "bcd_xs3_tb.vhd" "ed1fd0b2369703eca146598ae4f0ff54d90527c7" "20260704061755.170":
+  entity bcd_xs3_tb at 1( 0) + 0 on 13;
+  architecture behavioral of bcd_xs3_tb at 7( 95) + 0 on 14;
+file . "bcd_to_xs3.vhd" "bd929d7e07864f3fb45bac1396e19d4fd82e10df" "20260704061755.168":
+  entity bcd_to_xs3 at 1( 0) + 0 on 11;
+  architecture behavioral of bcd_to_xs3 at 10( 225) + 0 on 12;

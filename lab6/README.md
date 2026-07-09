@@ -1,53 +1,61 @@
-# Lab 6: VHDL Code for Code Converters (Binary to Gray and Binary to Excess-3)
+# Lab 6: VHDL Code for Combinational Circuits – Code Converter
 
 ## Objective
-
-- To design and implement a 4-bit Binary to Gray code converter using VHDL.
-- To design and implement a 4-bit Binary to Excess-3 code converter using VHDL.
-- To simulate both code converters using GHDL.
-- To verify the outputs using GTKWave.
+- Design and simulate a **BCD-to-Excess-3 Code Converter** using VHDL.
+- Design and simulate a **Binary-to-Gray Code Converter** using VHDL.
+- Verify the functionality of both converters using **GHDL** and **GTKWave**.
 
 ---
 
-## Tools Used
+## Theory
 
-- Visual Studio Code
-- GHDL
-- GTKWave
-- Git & GitHub
+### 1. BCD-to-Excess-3 Code Converter
+A BCD-to-Excess-3 converter transforms a Binary Coded Decimal (BCD) number into its corresponding Excess-3 code by adding **3 (0011)** to the BCD input. Excess-3 is a self-complementing code widely used in digital arithmetic circuits.
+
+**Examples:**
+
+| Decimal | BCD | Excess-3 |
+|---------|------|----------|
+| 0 | 0000 | 0011 |
+| 1 | 0001 | 0100 |
+| 5 | 0101 | 1000 |
+| 9 | 1001 | 1100 |
+
+### 2. Binary-to-Gray Code Converter
+Gray code is a binary numbering system in which only **one bit changes** between two consecutive values, reducing transition errors in digital systems.
+
+Conversion Rules:
+- G3 = B3
+- G2 = B3 XOR B2
+- G1 = B2 XOR B1
+- G0 = B1 XOR B0
 
 ---
 
 ## Files Included
 
-| File Name | Description |
-|-----------|-------------|
-| bin_to_gray.vhd | Binary to Gray converter |
-| gray_tb.vhd | Binary to Gray Testbench |
-| bcd_to_xs3.vhd | Binary to Excess-3 converter |
-| bcd_xs3_tb.vhd | Binary to Excess-3 Testbench |
-| output.png | Binary to Gray GTKWave waveform |
-| output.png | Binary to Excess-3 GTKWave waveform |
-| README.md | Lab report |
+### BCD-to-Excess-3 Converter
+- `bcd_to_xs3.vhd`
+- `bcd_xs3_tb.vhd`
 
----
-
-## Procedure
-
-1. Write the VHDL code for the Binary to Gray converter.
-2. Write the VHDL code for the Binary to Excess-3 converter.
-3. Create separate testbenches for both circuits.
-4. Compile the VHDL files using GHDL.
-5. Elaborate the testbenches.
-6. Run the simulations and generate the VCD files.
-7. Open the generated VCD files using GTKWave.
-8. Verify the output waveforms.
+### Binary-to-Gray Converter
+- `bin_to_gray.vhd`
+- `gray_tb.vhd`
 
 ---
 
 ## GHDL Commands
 
-### Binary to Gray
+### BCD-to-Excess-3 Converter
+
+```bash
+ghdl -a bcd_to_xs3.vhd bcd_xs3_tb.vhd
+ghdl -e BCD_XS3_TB
+ghdl -r BCD_XS3_TB --vcd=bcd_xs3.vcd
+gtkwave bcd_xs3.vcd
+```
+
+### Binary-to-Gray Converter
 
 ```bash
 ghdl -a bin_to_gray.vhd gray_tb.vhd
@@ -56,63 +64,52 @@ ghdl -r GRAY_TB --vcd=gray.vcd
 gtkwave gray.vcd
 ```
 
-### Binary to Excess-3
-
-```bash
-ghdl -a bcd_to_xs3.vhd bcd_xs3_tb.vhd
-ghdl -e BCD_XS3_TB
-ghdl -r BCD_XS3_TB--vcd=bcd_xs3.vcd
-gtkwave bcd_xs3.vcd
-```
-
 ---
 
 ## Expected Output
 
-### Binary to Gray
+### BCD-to-Excess-3
 
-| Binary | Gray |
-|--------|------|
+| BCD Input | Excess-3 Output |
+|-----------|-----------------|
+| 0000 | 0011 |
+| 0001 | 0100 |
+| 0101 | 1000 |
+| 1001 | 1100 |
+
+### Binary-to-Gray
+
+| Binary Input | Gray Output |
+|-------------|-------------|
 | 0000 | 0000 |
 | 0001 | 0001 |
 | 0010 | 0011 |
 | 0011 | 0010 |
 | 0100 | 0110 |
-| 0101 | 0111 |
-| 0110 | 0101 |
-| 0111 | 0100 |
-
-### Binary to Excess-3
-
-| Binary | Excess-3 |
-|--------|----------|
-| 0000 | 0011 |
-| 0001 | 0100 |
-| 0010 | 0101 |
-| 0011 | 0110 |
-| 0100 | 0111 |
-| 0101 | 1000 |
-| 0110 | 1001 |
-| 0111 | 1010 |
+| 1111 | 1000 |
 
 ---
 
-## Output (Screenshots)
+## Output (Screenshot)
 
-### Binary to Gray GTKWave Output
+### 1. BCD-to-Excess-3 Waveform
 
-![Binary to Gray GTKWave Output](Bina_to_Gray\output.png)
-
-### Binary to Excess-3 GTKWave Output
-
-![Binary to Excess-3 GTKWave Output](BCDtoExcess3\output.png)
+![BCD TO EXCESS-3 Output](BCDtoExcess3\output.png)
 
 ---
 
-# Discussion and Conclusion
+### 2. Binary-to-Gray Waveform
 
-In this laboratory experiment, the Binary to Gray and Binary to Excess-3 code converters were successfully designed and implemented using VHDL. Both circuits were compiled, elaborated, and simulated using GHDL, and the resulting waveforms were observed using GTKWave.
+![BINARY TO GRAY Output](Bina_to_Gray\output.png)
 
-The simulation results verified that the Binary to Gray converter correctly generated the corresponding Gray code for each binary input, while the Binary to Excess-3 converter correctly produced the Excess-3 code by adding three to the binary input. The generated waveforms matched the expected conversion tables.
+---
 
-This experiment enhanced the understanding of code conversion techniques, combinational logic design, VHDL programming, simulation, and waveform analysis. Hence, the objectives of the experiment were successfully achieved.
+## Discussion
+
+In this experiment, two different code converters were designed and simulated using VHDL. The BCD-to-Excess-3 converter successfully converted valid BCD inputs into their corresponding Excess-3 codes by adding three to each input value. The Binary-to-Gray converter correctly generated Gray code outputs using XOR operations, ensuring that only one bit changed between consecutive values. The simulation waveforms obtained from GTKWave matched the expected outputs, confirming the correctness of both VHDL designs.
+
+---
+
+## Conclusion
+
+The objectives of the experiment were successfully achieved. The BCD-to-Excess-3 and Binary-to-Gray code converters were implemented, simulated, and verified using GHDL and GTKWave. The waveform results matched the theoretical outputs, demonstrating a clear understanding of combinational code converters and VHDL-based digital circuit design.

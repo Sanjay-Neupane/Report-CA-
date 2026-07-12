@@ -1,0 +1,446 @@
+$date
+  Sun Jul 12 14:26:11 2026
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module ff_tb $end
+$var reg 1 ! clk $end
+$var reg 1 " s $end
+$var reg 1 # r $end
+$var reg 1 $ d $end
+$var reg 1 % j $end
+$var reg 1 & k $end
+$var reg 1 ' t $end
+$var reg 1 ( q_sr $end
+$var reg 1 ) q_d $end
+$var reg 1 * q_jk $end
+$var reg 1 + q_t $end
+$var reg 1 , qb_sr $end
+$var reg 1 - qb_d $end
+$var reg 1 . qb_jk $end
+$var reg 1 / qb_t $end
+$var reg 1 0 sim_running $end
+$scope module u1 $end
+$var reg 1 1 clk $end
+$var reg 1 2 s $end
+$var reg 1 3 r $end
+$var reg 1 4 q $end
+$var reg 1 5 qb $end
+$var reg 1 6 q_int $end
+$upscope $end
+$scope module u2 $end
+$var reg 1 7 clk $end
+$var reg 1 8 d $end
+$var reg 1 9 q $end
+$var reg 1 : qb $end
+$var reg 1 ; q_int $end
+$upscope $end
+$scope module u3 $end
+$var reg 1 < clk $end
+$var reg 1 = j $end
+$var reg 1 > k $end
+$var reg 1 ? q $end
+$var reg 1 @ qb $end
+$var reg 1 A q_int $end
+$upscope $end
+$scope module u4 $end
+$var reg 1 B clk $end
+$var reg 1 C t $end
+$var reg 1 D q $end
+$var reg 1 E qb $end
+$var reg 1 F q_int $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+0!
+1"
+0#
+0$
+0%
+0&
+0'
+0(
+0)
+0*
+0+
+1,
+1-
+1.
+1/
+10
+01
+12
+03
+04
+15
+06
+07
+08
+09
+1:
+0;
+0<
+0=
+0>
+0?
+1@
+0A
+0B
+0C
+0D
+1E
+0F
+#10000000
+1!
+1(
+0,
+11
+14
+05
+16
+17
+1<
+1B
+#20000000
+0!
+01
+07
+0<
+0B
+#30000000
+1!
+11
+17
+1<
+1B
+#40000000
+0!
+0"
+1#
+01
+02
+13
+07
+0<
+0B
+#50000000
+1!
+0(
+1,
+11
+04
+15
+06
+17
+1<
+1B
+#60000000
+0!
+01
+07
+0<
+0B
+#70000000
+1!
+11
+17
+1<
+1B
+#80000000
+0!
+0#
+01
+03
+07
+0<
+0B
+#90000000
+1!
+11
+17
+1<
+1B
+#100000000
+0!
+01
+07
+0<
+0B
+#110000000
+1!
+11
+17
+1<
+1B
+#120000000
+0!
+1$
+01
+07
+18
+0<
+0B
+#130000000
+1!
+1)
+0-
+11
+17
+19
+0:
+1;
+1<
+1B
+#140000000
+0!
+01
+07
+0<
+0B
+#150000000
+1!
+11
+17
+1<
+1B
+#160000000
+0!
+0$
+01
+07
+08
+0<
+0B
+#170000000
+1!
+0)
+1-
+11
+17
+09
+1:
+0;
+1<
+1B
+#180000000
+0!
+01
+07
+0<
+0B
+#190000000
+1!
+11
+17
+1<
+1B
+#200000000
+0!
+1%
+01
+07
+0<
+1=
+0B
+#210000000
+1!
+1*
+0.
+11
+17
+1<
+1?
+0@
+1A
+1B
+#220000000
+0!
+01
+07
+0<
+0B
+#230000000
+1!
+11
+17
+1<
+1B
+#240000000
+0!
+1&
+01
+07
+0<
+1>
+0B
+#250000000
+1!
+0*
+1.
+11
+17
+1<
+0?
+1@
+0A
+1B
+#260000000
+0!
+01
+07
+0<
+0B
+#270000000
+1!
+1*
+0.
+11
+17
+1<
+1?
+0@
+1A
+1B
+#280000000
+0!
+0%
+01
+07
+0<
+0=
+0B
+#290000000
+1!
+0*
+1.
+11
+17
+1<
+0?
+1@
+0A
+1B
+#300000000
+0!
+01
+07
+0<
+0B
+#310000000
+1!
+11
+17
+1<
+1B
+#320000000
+0!
+1'
+01
+07
+0<
+0B
+1C
+#330000000
+1!
+1+
+0/
+11
+17
+1<
+1B
+1D
+0E
+1F
+#340000000
+0!
+01
+07
+0<
+0B
+#350000000
+1!
+0+
+1/
+11
+17
+1<
+1B
+0D
+1E
+0F
+#360000000
+0!
+01
+07
+0<
+0B
+#370000000
+1!
+1+
+0/
+11
+17
+1<
+1B
+1D
+0E
+1F
+#380000000
+0!
+01
+07
+0<
+0B
+#390000000
+1!
+0+
+1/
+11
+17
+1<
+1B
+0D
+1E
+0F
+#400000000
+0!
+0'
+01
+07
+0<
+0B
+0C
+#410000000
+1!
+11
+17
+1<
+1B
+#420000000
+0!
+01
+07
+0<
+0B
+#430000000
+1!
+11
+17
+1<
+1B
+#440000000
+0!
+00
+01
+07
+0<
+0B
